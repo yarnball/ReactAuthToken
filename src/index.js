@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-// import { Router, browserHistory } from 'react-router';
 import { BrowserRouter, Route } from 'react-router-dom'
 import reduxThunk from 'redux-thunk';
-import cookie from 'react-cookie';
+// import { Provider } from 'react-redux';
+// import cookie from 'react-cookie';
 import routes from './routes';
 import reducers from './reducers/index';
 import ReactGA from 'react-ga';
 import { AUTH_USER } from './actions/types';
-// import App from './App';
-import './index.css';
 
 ReactGA.initialize('UA-000000-01');
 

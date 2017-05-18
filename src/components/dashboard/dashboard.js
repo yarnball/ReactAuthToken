@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import cookie from 'react-cookie';
 
 class Dashboard extends Component {
   render() {
     return (
-    	<div>
-					Dashboard
-			</div>
+    	<div>Dashboard</div>
     );
   }
 }

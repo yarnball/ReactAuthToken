@@ -18,6 +18,7 @@ export default function (state = INITIAL_STATE, action) {
       return { ...state, message: action.payload.message };
     case CHAT_ERROR:
       return { ...state, error: action.payload };
+    default:
   }
 
   return state;

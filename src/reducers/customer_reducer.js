@@ -16,6 +16,7 @@ export default function (state = INITIAL_STATE, action) {
       return { ...state, message: action.payload.message };
     case BILLING_ERROR:
       return { ...state, error: action.payload };
+    default:
   }
 
   return state;
