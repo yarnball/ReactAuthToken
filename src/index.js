@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
-import { Route, BrowserRouter } from 'react-router';
-// import { Provider } from 'react-redux';
-// import cookie from 'react-cookie';
+import { Router, browserHistory } from 'react-router';
+import { Provider } from 'react-redux';
+import cookie from 'react-cookie';
 import routes from './routes';
 import reducers from './reducers/index';
 import ReactGA from 'react-ga';
@@ -25,8 +25,8 @@ if (token) {
 }
 
 ReactDOM.render(
-  <BrowserRouter store={store}>
-    <Route routes={routes} onUpdate={logPageView} />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <Router history={browserHistory} routes={routes} onUpdate={logPageView} />
+  </Provider>,
   document.getElementById('wrapper')
 );
