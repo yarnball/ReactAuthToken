@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { Router, browserHistory } from 'react-router';
+// import { Router, browserHistory } from 'react-router';
+import { BrowserRouter, Route } from 'react-router-dom'
 import reduxThunk from 'redux-thunk';
 import cookie from 'react-cookie';
 import routes from './routes';
@@ -33,8 +34,8 @@ if (token) {
 
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={browserHistory} routes={routes} onUpdate={logPageView} />
-  </Provider>,
+  <BrowserRouter store={store}>
+    <Route routes={routes} onUpdate={logPageView} />
+  </BrowserRouter>,
   document.getElementById('.wrapper')
 );
