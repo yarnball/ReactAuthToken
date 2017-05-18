@@ -24,7 +24,6 @@ if (token) {
   store.dispatch({ type: AUTH_USER })
 }
 
-
 ReactDOM.render(
   <BrowserRouter store={store}>
     <Route routes={routes} onUpdate={logPageView} />
