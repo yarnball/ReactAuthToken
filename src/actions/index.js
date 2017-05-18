@@ -3,7 +3,7 @@ import cookie from 'react-cookie';
 import { logoutUser } from './auth';
 import { FETCH_USER } from './types';
 export const API_URL = 'http://localhost:8000';
-export const CLIENT_ROOT_URL = 'http://localhost:8080';
+export const CLIENT_ROOT_URL = 'http://localhost:3000';
 
 //= ===============================
 // Utility actions
