@@ -24,15 +24,10 @@ if (token) {
   store.dispatch({ type: AUTH_USER })
 }
 
-if (token) {
-  // Update application state. User has token and is probably authenticated
-  store.dispatch({ type: AUTH_USER });
-}
-
 
 ReactDOM.render(
   <BrowserRouter store={store}>
     <Route routes={routes} onUpdate={logPageView} />
   </BrowserRouter>,
-  document.getElementById('.wrapper')
+  document.getElementById('wrapper')
 );
