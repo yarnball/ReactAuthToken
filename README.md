@@ -1,4 +1,6 @@
-# This uses Django for Auth
+# Simple auth with create-react-app
+
+
 
 # To run
 
