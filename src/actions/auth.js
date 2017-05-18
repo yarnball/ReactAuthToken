@@ -27,7 +27,7 @@ export function loginUser({ username, password }) {
       // console.log('this is login' + JSON.stringify(response))
     })
     .catch((error) => {
-      errorHandler(dispatch, error.response, AUTH_ERROR);
+      errorHandler(dispatch, error, AUTH_ERROR);
     });
   };
 }
