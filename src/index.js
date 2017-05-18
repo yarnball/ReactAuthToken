@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route } from 'react-router-dom'
 import reduxThunk from 'redux-thunk';
+import { Route, BrowserRouter } from 'react-router';
 // import { Provider } from 'react-redux';
 // import cookie from 'react-cookie';
 import routes from './routes';
